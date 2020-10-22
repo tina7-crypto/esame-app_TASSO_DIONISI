@@ -11,11 +11,12 @@ new Vue({
   render: h => h(App)
 }).$mount("#app");
 
-var app = new Vue({
-  el: "#app",
+var productCard = new Vue({
+  el: "#productCard",
   data: {
     product: "Canon 50mm",
-    description: "Conveniente obiettivo di alta qualità, perfetto per ritratti creativi e fotografia in condizioni di scarsa illuminazione.",
-    imageFileName: "canon_50mm.jpg",
-    },
+    description:
+      "Conveniente obiettivo di alta qualità, perfetto per ritratti creativi e fotografia in condizioni di scarsa illuminazione.",
+    imageFileName: "canon_50mm.jpg"
+  }
 });
