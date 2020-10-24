@@ -89,48 +89,55 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-              <ul v-for="object in cards">
-                <li>{{object.name}}</li>
-              </ul>
-            </div>
-            <div class="card" id="productCard">
-              <img v-bind:src="'./img/'+imageFileName" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">{{product}}</h5>
-                <p class="card-text">{{description}}</p>
+                <div class="card" id="listadicose">
+                  <ul>
+                    <li v-for="object in cards">{{object.name}} {{object.descrizione}}</li>
+                  </ul>
+                  
+                  
+                  
+                </div>
+                <div class="card" id="productCard">
+                  <img v-bind:src="'./img/'+imageFileName" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{product}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <div class="cart">
+                      <button v-on:click="addToCart">Aggiungi al carrello</button>
+                      <p>Carrello ({{cart}})</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-              <img src="img/canon_6d_m2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Canon 6Dm2</h5>
-                <p class="card-text">Per realizzare i progetti più ambiziosi o diventare un fotografo professionista, EOS 6D Mark II offre tutto ciò di cui hai bisogno.</p>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                  <img src="img/canon_6d_m2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Canon 6Dm2</h5>
+                    <p class="card-text">Per realizzare i progetti più ambiziosi o diventare un fotografo professionista, EOS 6D Mark II offre tutto ciò di cui hai bisogno.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-              <img src="img/canon_18_135mm.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Canon 18 135mm</h5>
-                <p class="card-text">Questo obiettivo zoom grandangolare da 18-135 mm è ottimo per ogni occasione, dai paesaggi ai ritratti, fino alle riprese video.</p>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                  <img src="img/canon_18_135mm.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Canon 18 135mm</h5>
+                    <p class="card-text">Questo obiettivo zoom grandangolare da 18-135 mm è ottimo per ogni occasione, dai paesaggi ai ritratti, fino alle riprese video.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-              <img src="img/canon_700d.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Canon 700d</h5>
-                <p class="card-text">Porta la tua fotografia al livello superiore con la gamma completa di obiettivi, accessori e flash del sistema EOS</p>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                  <img src="img/canon_700d.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Canon 700d</h5>
+                    <p class="card-text">Porta la tua fotografia al livello superiore con la gamma completa di obiettivi, accessori e flash del sistema EOS</p>
+                  </div>
+                </div>
               </div>
-            </div>
           </div>
-            
-          </div>
+          
         </div>
 
         <!--Footer-->

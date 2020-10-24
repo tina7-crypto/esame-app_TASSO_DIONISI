@@ -5,7 +5,18 @@ var productCard = new Vue({
     description:
       "Conveniente obiettivo di alta qualità, perfetto per ritratti creativi e fotografia in condizioni di scarsa illuminazione.",
     imageFileName: "canon_50mm.jpg",
+    cart: 0
+  },
+  methods: {
+    addToCart: function() {
+      this.cart = this.cart + 1;
+    }
+  }
+});
 
+var Listadicose = new Vue({
+  el: "#listadicose",
+  data: {
     cards: [
       {
         id: 1,
@@ -24,13 +35,15 @@ var productCard = new Vue({
       {
         id: 3,
         name: "Canon 18-135",
-        descrizione: "Conveniente obiettivo di alta qualità, perfetto per ritratti creativi e fotografia in condizioni di scarsa illuminazione.",
+        descrizione:
+          "Conveniente obiettivo di alta qualità, perfetto per ritratti creativi e fotografia in condizioni di scarsa illuminazione.",
         immagine: "img/canon_50mm.jpg"
       },
       {
         id: 4,
         name: "Canon 700D",
-        descrizione: "Conveniente obiettivo di alta qualità, perfetto per ritratti creativi e fotografia in condizioni di scarsa illuminazione.",
+        descrizione:
+          "Conveniente obiettivo di alta qualità, perfetto per ritratti creativi e fotografia in condizioni di scarsa illuminazione.",
         immagine: "img/canon_50mm.jpg"
       }
     ]
