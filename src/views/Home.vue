@@ -1,18 +1,25 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <b-jumbotron
+      style="background-color: rgb(222, 246, 253);"
+      class="display-4"
+      header="Summer Shop"
+      lead="Accessori per l'estate"
+    >
+    </b-jumbotron>
+
+    <ListaProdotti />
+    <router-view />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import ListaProdotti from "@/views/ListaProdotti.vue";
 export default {
-  name: "Home",
   components: {
-    HelloWorld
+    ListaProdotti
   }
 };
 </script>
+
+<style></style>

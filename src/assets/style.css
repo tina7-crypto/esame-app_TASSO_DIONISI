@@ -1,0 +1,32 @@
+.product-box {
+    display: flex;
+    flex-flow: wrap;
+    padding: 1rem;
+  }
+  
+  .product-image,
+  .product-info {
+    width: 40%;
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-flow: wrap;
+    padding: 1rem;
+  }
+  
+  .bold-descr {
+    font-size: 1.3em;
+    font-style: bold;
+  }
+  
+  .info-base {
+    text-align: left;
+  }
+  
+  ul {
+    text-align: left;
+  }
+
+  .jumbotron {
+    margin: 0 15px;
+  }
